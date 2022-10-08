@@ -21,4 +21,4 @@ INSERT INTO Production.ProductCategory([Name],rowguid,ModifiedDate)
 VALUES (@Nombre,@MyId,'20221008')
 END
 
--- Exec usp_AltaRegistro'Electronics'
+-- Exec usp_AltaRegistro'Auto Parts'
