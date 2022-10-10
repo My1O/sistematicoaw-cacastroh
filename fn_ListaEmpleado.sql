@@ -24,7 +24,8 @@ AS
 RETURN 
 (
 	-- Filtrado de datos que mostrara la tabla
-	SELECT LoginID, JobTitle,BirthDate, HireDate FROM HumanResources.Employee
+	SELECT em.LoginID, em.JobTitle, em.BirthDate, em.HireDate, DATEPART (year,GETDATE()) - DATEPART (year,em.BirthDate) AS Edad, 
+	DATEPART (year,Getdate())-DATEPART(year, em.HireDate) as Antiguedad FROM HumanResources.Employee em
 )
 GO
 
