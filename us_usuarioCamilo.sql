@@ -3,3 +3,5 @@
 
 CREATE USER [cacastro] FOR LOGIN [userVendedores] WITH DEFAULT_SCHEMA=[dbo]
 GO
+ALTER ROLE [Vendedores] ADD MEMBER [cacastro]
+GO
